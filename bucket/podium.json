@@ -1,0 +1,27 @@
+{
+  "version": "0.1.1",
+  "description": "Catalog and registry for reusable AI agent artifacts. Ships the podium CLI, podium-server (standalone registry), and podium-mcp (MCP bridge).",
+  "homepage": "https://github.com/lennylabs/podium",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/lennylabs/podium/releases/download/v0.1.1/podium-windows-amd64.zip",
+      "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "bin": [
+    "podium.exe",
+    "podium-server.exe",
+    "podium-mcp.exe"
+  ],
+  "checkver": {
+    "github": "https://github.com/lennylabs/podium"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/lennylabs/podium/releases/download/v$version/podium-windows-amd64.zip"
+      }
+    }
+  }
+}
